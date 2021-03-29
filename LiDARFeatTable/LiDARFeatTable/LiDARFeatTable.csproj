@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{313ED210-BE4C-4A70-9725-CF5624A42417}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiDARFeatTable</RootNamespace>
+    <AssemblyName>LiDARFeatTable</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Program Files %28x86%29\Bentley\MicroStation V8i %28SELECTseries%29\MicroStation\mdlapps\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\..\..\..\..\..\Program Files %28x86%29\Bentley\MicroStation V8i %28SELECTseries%29\MicroStation\mdlapps\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bentley.General.1.0">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\assemblies\ECFramework\Bentley.General.1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="bentley.interop.microstationdgn">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\assemblies\bentley.interop.microstationdgn.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="bentley.microstation">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\assemblies\bentley.microstation.dll</HintPath>
+    </Reference>
+    <Reference Include="bentley.microstation.interfaces.1.0">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\assemblies\bentley.microstation.interfaces.1.0.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ustation">
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\ustation.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addin.cs" />
+    <Compile Include="FeatTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeatTable.Designer.cs">
+      <DependentUpon>FeatTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FeatTable.resx">
+      <DependentUpon>FeatTable.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="LidarCommands.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

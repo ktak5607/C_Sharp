@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<KeyinTree xmlns="http://www.bentley.com/schemas/1.0/MicroStation/AddIn/KeyinTree.xsd">
+  <RootKeyinTable ID="root">
+    <Keyword SubtableRef="Open"
+            CommandClass="MacroCommand" CommandWord="LiDARFeatTable" >
+      <Options Required ="true"/>
+    </Keyword>
+  </RootKeyinTable>
+
+  <SubKeyinTables>
+    <KeyinTable ID="Open">
+      <Keyword CommandWord="Open">
+      </Keyword>
+    </KeyinTable>
+  </SubKeyinTables>
+
+  <KeyinHandlers>
+    <KeyinHandler Keyin="LiDARFeatTable Open"
+        Function="LiDARFeatTable.Addin.OpenKeyIn"/>
+  </KeyinHandlers>
+</KeyinTree>

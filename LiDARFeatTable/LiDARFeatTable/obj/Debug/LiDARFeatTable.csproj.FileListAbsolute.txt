@@ -1,0 +1,20 @@
+c:\users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\obj\Debug\LiDARFeatTable.csprojResolveAssemblyReference.cache
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\LiDARFeatTable.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\LiDARFeatTable.pdb
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\Bentley.General.1.0.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\bentley.interop.microstationdgn.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\bentley.microstation.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\bentley.microstation.interfaces.1.0.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\ustation.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\Bentley.Exceptions.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\Bentley.PowerPlatform.FeatureAspects.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\Bentley.logging-2.0.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\en\ustation.resources.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\en\Bentley.PowerPlatform.FeatureAspects.resources.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\bin\Debug\ustation.resources
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\obj\Debug\LiDARFeatTable.FeatTable.resources
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\obj\Debug\LiDARFeatTable.csproj.GenerateResource.Cache
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\obj\Debug\LiDARFeatTable.dll
+C:\Users\kevin.takala\documents\visual studio 2012\Projects\LiDARFeatTable\LiDARFeatTable\obj\Debug\LiDARFeatTable.pdb
+C:\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\mdlapps\LiDARFeatTable.dll
+C:\Program Files (x86)\Bentley\MicroStation V8i (SELECTseries)\MicroStation\mdlapps\LiDARFeatTable.pdb
