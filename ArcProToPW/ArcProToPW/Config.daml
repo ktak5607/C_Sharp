@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArcGIS defaultAssembly="ArcProToPW.dll"
+        defaultNamespace="ArcProToPW"
+        xmlns="http://schemas.esri.com/DADF/Registry"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://schemas.esri.com/DADF/Registry file:///C:/Program%20Files/ArcGIS/Pro/bin/ArcGIS.Desktop.Framework.xsd">
+  
+  <AddInInfo id="{b3352e50-7381-47ec-87d2-1a4fed5f4698}" version="1.0" desktopVersion="2.5.22081">
+    <Name>ArcProToPW</Name>   
+    <Description>ArcProToPW description</Description>
+    <Image>Images\AddinDesktop32.png</Image>
+    <Author>Kevin.Takala</Author>
+    <Company>Acme</Company>
+    <Date>7/10/2020 12:04:09 PM, 2020</Date>
+    <Subject>Framework</Subject>
+    <!-- Note subject can be one or more of these topics:
+                    Content, Framework, Editing, Geodatabase, Geometry, Geoprocessing, Layouts, Map Authoring, Map Exploration -->
+  </AddInInfo>
+  <conditions>
+    <!-- our custom condition -->
+    
+  </conditions>
+  <modules>
+    <insertModule id="ArcProToPW_Module" className="BaseClass" autoLoad="false" caption="ProjectWise">
+      <!-- uncomment to have the control hosted on a separate tab-->
+      <tabs>
+        <tab id="ProjectWiseTab" caption="ProjectWise">
+          <group refID="PWSyncGroup" />
+          <group refID="FileSyncGroup"/>
+          <group refID="OpenPW"/>
+        </tab>
+      </tabs>
+      <groups>
+        <group id="PWSyncGroup" caption="ProjectWise to File Tools" appearsOnAddInTab="false">
+          <button refID="SyncPWFile"/>
+          <button refID="SyncFiles"/>
+        </group>
+          
+          <group id="FileSyncGroup" caption="File to ProjectWise Tools" appearsOnAddInTab="false" >
+            <button refID="SyncFile"/>
+            <button refID="SyncFiles"/>
+        </group>
+        <group id="OpenPW" caption="Open" appearsOnAddInTab="false">
+          <button refID="openPWFile" size="large"/>
+          <button refID="checkInPWFiles" size="large"/>
+        </group>
+		    <group refID="PWSyncGroup" />
+          <group refID="FileSyncGroup"/>
+          <group refID="OpenPW"/>
+      </groups>
+      <controls>
+	      <button id="SyncPWFile" caption="Sync PW File" className="PWSync" loadOnClick="true" />
+        <button id="SyncPWFiles" caption="Sync All PW Files" className="PWSyncAll" loadOnClick="true"/>
+        <button id="SyncFile" caption="Sync File" className="FileSync" loadOnClick="true"/>
+        <button id="SyncFiles" caption="Sync All Files" className="FileSyncAll" loadOnClick="true"/>
+        <button id="openPWFile" caption="Open PW File" className="OpenPWFile" loadOnClick="true">
+          <tooltip heading="Click me to open ProjectWise browser."/>
+        </button>
+        <button id="checkInPWFiles" caption ="Check In PW File(s)" className="CheckInPWFiles" loadOnClick="true"/>
+      </controls>
+    </insertModule>
+  </modules>
+</ArcGIS>
