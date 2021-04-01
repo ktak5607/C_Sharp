@@ -75,7 +75,7 @@ namespace ArcProToPW
             {
                 string title = "ProjectWise Login";
                 StringBuilder dataSource = new StringBuilder("VDOT ProjectWise");
-                string user = "cov\\kevin.takala";
+                string user = "";
                 string password = "";
                 IntPtr login = Wrappers.aaApi_LoginDlgExt(IntPtr.Zero, title, 0, dataSource, dataSource.Length, user, password, null);
                 if(login.ToInt32() == 1)
